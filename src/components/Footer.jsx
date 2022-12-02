@@ -5,7 +5,6 @@ import {
   Twitter,
 } from "@material-ui/icons";
 import styled from "styled-components";
-import { mobile } from "../responsive";
 
 const Left = styled.div`
   flex: 1;
@@ -38,8 +37,6 @@ const Title = styled.h3`
 const Right = styled.div`
   flex: 1;
   padding: 20px;
-  ${mobile({ backgroundColor: "#fff8f8" })}
-
 `;
 
 const Footer = () => {

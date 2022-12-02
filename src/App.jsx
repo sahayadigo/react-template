@@ -11,7 +11,6 @@ import Favourites from "./pages/Favourites";
 import Footer from "./components/Footer";
 
 const App = () => {
-  //return <Home/>;
   return (
     <div style={{background: "red", padding: "20px"}}>
     <div className="main">

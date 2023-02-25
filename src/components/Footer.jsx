@@ -1,68 +1,53 @@
-import {
-  Facebook,
-  Instagram,
-  Pinterest,
-  Twitter,
-} from "@material-ui/icons";
 import styled from "styled-components";
+
+const Wrapper = styled.div`
+  background: #343A40;
+  height: 100px;
+  color: #fff;
+`;
 
 const Left = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
   padding: 20px;
-`;
-
-const SocialContainer = styled.div`
-  display: flex;
-`;
-
-const SocialIcon = styled.div`
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  color: white;
-  background-color: #${(props) => props.color};
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 20px;
-`;
-
-const Title = styled.h3`
-  margin-bottom: 30px;
-  color: #000;
+  float: left;
 `;
 
 const Right = styled.div`
   flex: 1;
   padding: 20px;
+  float: right;
+`;
+
+const NavItem = styled.ul`
+  display: inherit;
+  padding-left: 0px;
+  list-style: none;
+  float: right;
+`;
+
+const NavItemList = styled.li`
+  padding: 10px;
+  color: #d1d1d1;
+    display: inline;
 `;
 
 const Footer = () => {
   return (
-    <div>
+    <Wrapper>
       <Left>
-        <SocialContainer>
-          <SocialIcon color="3B5999">
-            <Facebook />
-          </SocialIcon>
-          <SocialIcon color="E4405F">
-            <Instagram />
-          </SocialIcon>
-          <SocialIcon color="55ACEE">
-            <Twitter />
-          </SocialIcon>
-          <SocialIcon color="E60023">
-            <Pinterest />
-          </SocialIcon>
-        </SocialContainer>
+        &nbsp; 2023 Copyright
       </Left>
       <Right>
-        <Title>Contact</Title>
+        <NavItem>
+          <NavItemList>About</NavItemList>
+          <NavItemList>Terms</NavItemList>
+          <NavItemList>Contact</NavItemList>
+        </NavItem>
         
       </Right>
-    </div>
+    </Wrapper>
   );
 };
 
